@@ -20,6 +20,7 @@ class HomePage extends StatelessWidget {
             ServiceSection(),
             RecentWorkSection(),
             FeedbackSection(),
+            SizedBox(height: kDefaultPadding),
             ContactSection(),
             SizedBox(height: 100),
           ],

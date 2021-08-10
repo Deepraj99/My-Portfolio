@@ -17,6 +17,7 @@ class TopSection extends StatelessWidget {
           fit: BoxFit.cover,
           image: AssetImage("assets/images/background.png"),
         ),
+        boxShadow: [kDefaultShadow],
       ),
       child: Container(
         margin: EdgeInsets.only(top: 100),
@@ -33,13 +34,14 @@ class TopSection extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: 180,
-                right: 90,
-                child: Container(
-                  width: 60,
-                  height: 10,
-                  color: Colors.black,
-                ))
+              bottom: 180,
+              right: 90,
+              child: Container(
+                width: 60,
+                height: 10,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),

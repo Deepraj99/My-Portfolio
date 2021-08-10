@@ -16,7 +16,7 @@ class ServiceSection extends StatelessWidget {
       ),
       child: Column(
         children: [
-          SectionTitle(),
+          SectionTitle(subtitle: "My Strong Arenas", title: "Service Offering"),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(

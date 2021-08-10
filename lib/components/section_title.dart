@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 
 class SectionTitle extends StatelessWidget {
-  const SectionTitle({
+  SectionTitle({
     Key? key,
+    required this.subtitle,
+    required this.title,
   }) : super(key: key);
+
+  String subtitle;
+  String title;
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +36,12 @@ class SectionTitle extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
-                "My Strong Arenas",
+                subtitle,
                 style:
                     TextStyle(fontWeight: FontWeight.w200, color: kTextColor),
               ),
               Text(
-                "Service Offerings",
+                title,
                 style: Theme.of(context).textTheme.headline2!.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,

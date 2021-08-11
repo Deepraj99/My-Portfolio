@@ -16,7 +16,7 @@ class SectionTitle extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: kDefaultPadding),
       constraints: BoxConstraints(maxWidth: 1110),
-      height: 100,
+      height: 110,
       child: Row(
         children: [
           Container(
@@ -33,7 +33,7 @@ class SectionTitle extends StatelessWidget {
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 subtitle,

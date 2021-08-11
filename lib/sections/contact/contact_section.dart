@@ -18,9 +18,7 @@ class ContactSection extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: kDefaultPadding * 2.5),
-          SectionTitle(
-              subtitle: "For Project inquiry and information",
-              title: "Contact Me"),
+          SectionTitle(title: "Contact Me"),
           ContactBox(),
         ],
       ),

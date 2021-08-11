@@ -1,9 +1,7 @@
-import 'dart:html';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 class GlassContent extends StatelessWidget {
   const GlassContent({

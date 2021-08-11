@@ -15,7 +15,6 @@ class FeedbackSection extends StatelessWidget {
       child: Column(
         children: [
           SectionTitle(
-            subtitle: "Client's testimonials that inspired me a lot",
             title: "Feedback Received",
           ),
           SizedBox(height: kDefaultPadding),

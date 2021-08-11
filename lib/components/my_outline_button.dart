@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -29,7 +30,12 @@ class MyMaterialButton extends StatelessWidget {
             SizedBox(
               width: kDefaultPadding,
             ),
-            Text("Hire Me!"),
+            Text(
+              "Hire Me!",
+              style: GoogleFonts.lato(
+                fontSize: 20,
+              ),
+            ),
           ],
         ),
       ),
@@ -65,7 +71,12 @@ class MyMaterialButton1 extends StatelessWidget {
             SizedBox(
               width: kDefaultPadding,
             ),
-            Text("Download CV"),
+            Text(
+              "Download CV",
+              style: GoogleFonts.lato(
+                fontSize: 20,
+              ),
+            ),
           ],
         ),
       ),

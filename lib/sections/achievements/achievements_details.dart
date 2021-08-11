@@ -287,7 +287,7 @@ class Acievement7 extends StatelessWidget {
         Container(
           alignment: Alignment.topLeft,
           child: Text(
-            "Problem setter at Coderation ('Sparcity' codechef cheapter of IIITU",
+            "Problem setter at Coderation ('Sparcity' codechef cheapter of IIITU)",
             style: GoogleFonts.lato(
               fontSize: 20,
               color: Colors.grey[500],

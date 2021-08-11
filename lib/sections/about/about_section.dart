@@ -14,51 +14,58 @@ class AboutSection extends StatelessWidget {
       child: Column(
         children: [
           SectionTitle(title: "About Me"),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "\"Software Engineering student with excellent\nproblem-solving skills, Mobile App Developer\nusing Flutter, Competitive Programmer and\nability to perform well in a team. Passionate\nabout coding and trying to build an easy and\nlazy life.\"",
-                style: GoogleFonts.lato(
-                  fontSize: 40,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.grey[500],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                padding: EdgeInsets.all(kDefaultPadding),
-                height: 240,
-                width: 255,
-                decoration: BoxDecoration(
-                  color: Color(0xFFF7E8FF),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEDD2FC),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(0, 3),
-                        blurRadius: 6,
-                        color: Color(0xFFA600FF).withOpacity(.30),
-                      ),
-                    ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "\"Software Engineering student with excellent\nproblem-solving skills, Mobile App Developer\nusing Flutter, Competitive Programmer and\nability to perform well in a team. Passionate\nabout coding and trying to build an easy and\nlazy life.\"",
+                  style: GoogleFonts.lato(
+                    fontSize: 40,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.grey[500],
                   ),
-                  child: GraduationYearCard(),
                 ),
-              ),
-            ],
+                SizedBox(width: 70),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  padding: EdgeInsets.all(kDefaultPadding),
+                  height: 240,
+                  width: 255,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFF7E8FF),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEDD2FC),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          offset: Offset(0, 3),
+                          blurRadius: 6,
+                          color: Color(0xFFA600FF).withOpacity(.30),
+                        ),
+                      ],
+                    ),
+                    child: GraduationYearCard(),
+                  ),
+                ),
+              ],
+            ),
           ),
           SizedBox(height: kDefaultPadding * 3),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              MyMaterialButton(),
-              SizedBox(width: kDefaultPadding * 1.5),
-              MyMaterialButton1(),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MyMaterialButton(),
+                SizedBox(width: kDefaultPadding * 1.5),
+                MyMaterialButton1(),
+              ],
+            ),
           ),
         ],
       ),

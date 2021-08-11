@@ -40,8 +40,8 @@ class _EducationDetailsState extends State<EducationDetails> {
                           "Indian Institute of Information Technology, Una",
                           style: GoogleFonts.lato(
                             fontSize: 30,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.grey[500],
+                            fontWeight: FontWeight.w700,
+                            color: Colors.grey[600],
                           ),
                         ),
                       ],
@@ -91,7 +91,7 @@ class _EducationDetailsState extends State<EducationDetails> {
                       Icon(Icons.link_sharp, color: Colors.grey[500]),
                       GestureDetector(
                         onTap: () {
-                          _launchURL("http://iiitu.ac.in/#gsc.tab=0");
+                          openURL('http://iiitu.ac.in/#gsc.tab=0');
                         },
                         child: Container(
                           child: Text(
@@ -99,7 +99,7 @@ class _EducationDetailsState extends State<EducationDetails> {
                             style: GoogleFonts.lato(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
-                              color: Colors.grey[500],
+                              color: Colors.blue,
                             ),
                           ),
                         ),
@@ -116,7 +116,7 @@ class _EducationDetailsState extends State<EducationDetails> {
   }
 }
 
-_launchURL(String url) async {
+openURL(url) async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {

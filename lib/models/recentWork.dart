@@ -13,26 +13,27 @@ class RecentWork {
 List<RecentWork> recentWorks = [
   RecentWork(
     id: 1,
-    title: "New & Fresh Looking Portfolio indeed at the end",
-    category: "Graphic Design",
-    image: "assets/images/work_1.png",
+    title: "AI-Powered Voice Assistant Flutter Radio App",
+    category: "AI Radio",
+    image: "assets/images/AIRadio.png",
   ),
   RecentWork(
     id: 2,
-    title: "New & Fresh Looking Portfolio indeed at the end",
-    category: "Graphic Design",
-    image: "assets/images/work_2.png",
+    title: "Wallpaper app with search and download option.",
+    category: "GlanceAt",
+    image: "assets/images/glanceAt.jpeg",
   ),
   RecentWork(
     id: 3,
-    title: "New & Fresh Looking Portfolio indeed at the end",
-    category: "Graphic Design",
-    image: "assets/images/work_3.png",
+    title: "Intregated payments in flutter app with Razorpay Payment Gateway.",
+    category: "Razor Pay",
+    image: "assets/images/razorPay.jpeg",
   ),
   RecentWork(
     id: 4,
-    title: "New & Fresh Looking Portfolio indeed at the end",
-    category: "Graphic Design",
-    image: "assets/images/work_4.png",
+    title:
+        "Reminds your meetings/classes and redirect you to respective website.",
+    category: "Meeting Reminder",
+    image: "assets/images/meetingReminder.jpeg",
   ),
 ];

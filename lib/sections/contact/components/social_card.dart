@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 
+// SocialCard(
+//                 color: Colors.white,
+//                 iconSrc: "assets/images/linkedIn.png",
+//                 name: "",
+//                 press: () {
+//                   openURL(
+//                       'https://www.linkedin.com/in/deepak-prajapati-08b8b3191/');
+//                 },
+//               ),
 class SocialCard extends StatefulWidget {
   SocialCard({
     Key? key,

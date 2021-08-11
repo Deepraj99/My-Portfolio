@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyMaterialButton extends StatelessWidget {
   const MyMaterialButton({
@@ -16,7 +17,9 @@ class MyMaterialButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
         ),
         color: Color(0xFFE8F0F9),
-        onPressed: () {},
+        onPressed: () {
+          openURL('https://this.deepraj@gmail.com');
+        },
         child: Row(
           children: [
             Image.asset(
@@ -49,7 +52,10 @@ class MyMaterialButton1 extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
         ),
         color: Color(0xFFE8F0F9),
-        onPressed: () {},
+        onPressed: () {
+          openURL(
+              'https://drive.google.com/file/d/12-kRhEC78uQ83wffCBQgKCSVUuYsuDDC/view?usp=sharing');
+        },
         child: Row(
           children: [
             Image.asset(
@@ -64,5 +70,13 @@ class MyMaterialButton1 extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+openURL(url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

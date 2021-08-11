@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HireMeCard extends StatelessWidget {
   const HireMeCard({
@@ -52,7 +53,15 @@ class HireMeCard extends StatelessWidget {
             ),
           ),
           MaterialButton(
-            onPressed: () {},
+            padding: EdgeInsets.symmetric(
+                vertical: kDefaultPadding, horizontal: kDefaultPadding * 2.5),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50),
+            ),
+            color: Color(0xFFE8F0F9),
+            onPressed: () {
+              openURL();
+            },
             child: Row(
               children: [
                 Image.asset(
@@ -69,5 +78,22 @@ class HireMeCard extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+_launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+openURL() async {
+  const url = 'https://this.deepraj@gmail.com';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

@@ -13,7 +13,6 @@ class RecentWorkSection extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: kDefaultPadding * 6),
       width: double.infinity,
-      // height: 600,
       decoration: BoxDecoration(
         color: Color(0xFFF7E8FF).withOpacity(0.3),
         image: DecorationImage(
@@ -27,23 +26,30 @@ class RecentWorkSection extends StatelessWidget {
             offset: Offset(0, -80),
             child: HireMeCard(),
           ),
-          SectionTitle(title: "Recent Works"),
+          SectionTitle(title: "Projects"),
           SizedBox(height: kDefaultPadding * 1.5),
-          SizedBox(
-            width: 1110,
-            child: Wrap(
-              spacing: kDefaultPadding,
-              runSpacing: kDefaultPadding * 2,
-              children: List.generate(
-                  recentWorks.length,
-                  (index) => RecentWorkCard(
-                        index: index,
-                        press: () {},
-                      )),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Project1(),
+                    SizedBox(width: 20),
+                    Project2(),
+                  ],
+                ),
+                SizedBox(height: 20),
+                Row(
+                  children: [
+                    Project3(),
+                    SizedBox(width: 20),
+                    Project4(),
+                  ],
+                ),
+                SizedBox(height: kDefaultPadding * 4),
+              ],
             ),
-          ),
-          SizedBox(
-            height: kDefaultPadding * 5,
           ),
         ],
       ),

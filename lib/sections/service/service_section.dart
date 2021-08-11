@@ -17,10 +17,13 @@ class ServiceSection extends StatelessWidget {
       child: Column(
         children: [
           SectionTitle(title: "Service Offering"),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: List.generate(
-                services.length, (index) => ServiceCard(index: index)),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: List.generate(
+                  services.length, (index) => ServiceCard(index: index)),
+            ),
           ),
         ],
       ),

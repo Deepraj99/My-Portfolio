@@ -6,6 +6,7 @@ import 'package:portfolio/sections/education/education_details.dart';
 import 'package:portfolio/sections/feedback/feedback_section.dart';
 import 'package:portfolio/sections/recent_work/recent_work_section.dart';
 import 'package:portfolio/sections/service/service_section.dart';
+import 'package:portfolio/sections/skills/skills.dart';
 import 'package:portfolio/sections/topSection/topSection.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,7 +35,8 @@ class HomePage extends StatelessWidget {
             SizedBox(height: kDefaultPadding * 2),
             RecentWorkSection(),
             SizedBox(height: kDefaultPadding * 2),
-            FeedbackSection(),
+            // FeedbackSection(),
+            Skills(),
             SizedBox(height: kDefaultPadding),
             ContactSection(),
             SizedBox(height: 100),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/sections/about/about_section.dart';
+import 'package:portfolio/sections/achievements/achievements.dart';
 import 'package:portfolio/sections/contact/contact_section.dart';
 import 'package:portfolio/sections/education/education_details.dart';
 import 'package:portfolio/sections/feedback/feedback_section.dart';
@@ -37,9 +38,10 @@ class HomePage extends StatelessWidget {
             SizedBox(height: kDefaultPadding * 2),
             // FeedbackSection(),
             Skills(),
-            SizedBox(height: kDefaultPadding),
+            SizedBox(height: kDefaultPadding * 2),
+            Achievements(),
+            SizedBox(height: kDefaultPadding * 2),
             ContactSection(),
-            SizedBox(height: 100),
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/components/my_outline_button.dart';
+import 'package:portfolio/components/section_title.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/sections/topSection/components/graduationYearCard.dart';
 
@@ -12,11 +13,12 @@ class AboutSection extends StatelessWidget {
       constraints: BoxConstraints(maxWidth: 1110),
       child: Column(
         children: [
+          SectionTitle(title: "About Me"),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "\"Software Engineering student with\n excellent problem-solving skills and\n ability to perform well in a team.\n Passionate about coding and trying\n to build an easy and lazy life.\"",
+                "\"Software Engineering student with excellent\nproblem-solving skills, Mobile App Developer\nusing Flutter, Competitive Programmer and\nability to perform well in a team. Passionate\nabout coding and trying to build an easy and\nlazy life.\"",
                 style: GoogleFonts.lato(
                   fontSize: 40,
                   fontWeight: FontWeight.w300,

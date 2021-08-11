@@ -1,9 +1,7 @@
-import 'dart:html';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 class GlassContent extends StatelessWidget {
   const GlassContent({
@@ -15,17 +13,23 @@ class GlassContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        child: Container(
+    return Stack(
+      children: [
+        Container(
+          width: 1110,
+          constraints: BoxConstraints(maxHeight: size.height * 0.709),
+          decoration: BoxDecoration(
+            color: Color(0xff4f617d), //.withOpacity(0.5),
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
+        Container(
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
           width: 1110,
           constraints: BoxConstraints(maxHeight: size.height * 0.709),
           color: Colors.white.withOpacity(0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -35,16 +39,18 @@ class GlassContent extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
+              SizedBox(height: 200),
               Text(
-                'Deepak\nPrajapati',
-                style: GoogleFonts.rubik(
+                'Deepak Prajapati',
+                style: GoogleFonts.lato(
                   color: Colors.white,
                   fontSize: 100,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 15),
               Text(
-                '  Flutter App Developer\n  Competitive Programmer',
+                '  Flutter App Developer | Competitive Programmer',
                 style: GoogleFonts.rubik(
                   color: Colors.white,
                   fontSize: 20,
@@ -53,46 +59,7 @@ class GlassContent extends StatelessWidget {
             ],
           ),
         ),
-      ),
+      ],
     );
   }
 }
-
-
-
-
-
-
-
-// var nameWidget = "Deepak\nPrajapati"
-    //     .text
-    //     .gray200
-    //     .xl6
-    //     .lineHeight(1)
-    //     .size(context.isMobile ? 15 : 20)
-    //     .bold
-    //     .make()
-    //     .shimmer();
-
-
-// child: Column(
-          //   crossAxisAlignment: CrossAxisAlignment.start,
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: [
-          //     // ZStack(
-          //     //   [
-          //     //     Row(
-          //     //       children: [
-          //     //         // VStack(
-          //     //         //   [
-          //     //         //     30.heightBox,
-          //     //         //     nameWidget,
-          //     //         //   ],
-          //     //         // )
-          //     //       ],
-          //     //     ),
-          //     //   ],
-          //     // ),
-
-          //   ],
-          // ),

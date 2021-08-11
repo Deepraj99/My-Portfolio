@@ -27,7 +27,7 @@ class RecentWorkSection extends StatelessWidget {
             offset: Offset(0, -80),
             child: HireMeCard(),
           ),
-          SectionTitle(subtitle: "My Strong Arenas", title: "Recent Works"),
+          SectionTitle(title: "Recent Works"),
           SizedBox(height: kDefaultPadding * 1.5),
           SizedBox(
             width: 1110,

@@ -11,6 +11,12 @@ final kDefaultShadow = BoxShadow(
   color: Color(0xFF0700B1).withOpacity(0.15),
 );
 
+final kDefaultShadow1 = BoxShadow(
+  offset: Offset(0, 50),
+  blurRadius: 50,
+  color: Colors.grey.withOpacity(.25),
+);
+
 final kDefaultCardShadow = BoxShadow(
   offset: Offset(0, 20),
   blurRadius: 50,

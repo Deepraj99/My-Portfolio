@@ -15,6 +15,7 @@ class MyMaterialButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
         ),
+        color: Color(0xFFE8F0F9),
         onPressed: () {},
         child: Row(
           children: [

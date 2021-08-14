@@ -91,7 +91,7 @@ class _EducationDetailsState extends State<EducationDetails> {
                       Icon(Icons.link_sharp, color: Colors.grey[500]),
                       GestureDetector(
                         onTap: () {
-                          openURL('http://iiitu.ac.in/#gsc.tab=0');
+                          openURL("http://iiitu.ac.in/");
                         },
                         child: Container(
                           child: Text(

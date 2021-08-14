@@ -25,7 +25,7 @@ List<RecentWork> recentWorks = [
   ),
   RecentWork(
     id: 3,
-    title: "Intregated payments in flutter app with Razorpay Payment Gateway.",
+    title: "Integrated payments in flutter app with Razorpay Payment Gateway.",
     category: "Razor Pay",
     image: "assets/images/razorPay.jpeg",
   ),

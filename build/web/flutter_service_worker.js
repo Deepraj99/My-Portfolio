@@ -44,12 +44,12 @@ const RESOURCES = {
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/NOTICES": "4d207342c364cdce1e93af135a21fd82",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"index.html": "95931b2212ec1039003346916a59f79a",
-"/": "95931b2212ec1039003346916a59f79a",
+"index.html": "a2ab2c0fd4d685680c6d54443b58fd18",
+"/": "a2ab2c0fd4d685680c6d54443b58fd18",
 "version.json": "426313f2f3133c2f20415344c4a22df3",
 "manifest.json": "a83bbbd9d23ea4d752fbcd44cdc544fa",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "4fa58e8c7cff8dfae2bf2bef929bc7f3",
+"main.dart.js": "db9da7c94441ba8e5921f2ff265353f7",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1"
 };

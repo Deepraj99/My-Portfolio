@@ -51716,7 +51716,7 @@ Y.Ay.prototype={
 J:function(a,b){var s=null,r=K.dl(50)
 return T.a97(B.a5j(T.bh(H.a([U.eZ("assets/images/download.png",s,40,s),T.a3(s,s,20),L.ae("Download CV",B.b5(s,20,s),s,s)],t.p),C.m),new P.A(4293456121),new Y.Sd(),new V.ay(50,20,50,20),new X.d_(r,C.p)))}}
 Y.Sd.prototype={
-$0:function(){Y.x_("https://drive.google.com/file/d/12-kRhEC78uQ83wffCBQgKCSVUuYsuDDC/view?usp=sharing")},
+$0:function(){Y.x_("https://drive.google.com/file/d/1pceKKKhEBipcT5OkLqnHF6d7JX_-ITnT/view?usp=sharing")},
 $S:0}
 K.h4.prototype={
 J:function(a,b){var s=null,r=t.p
@@ -51846,7 +51846,7 @@ X.Fl.prototype={
 J:function(a,b){var s=null,r=b.a8(t.w).f,q=F.LI(C.dG),p=t.p
 return M.aN(s,T.ci(H.a([new K.h4("Education",s),M.aN(C.ac,T.ci(H.a([T.bh(H.a([T.ci(H.a([L.ae("Indian Institute of Information Technology, Una",B.b5(C.l.i(0,600),30,C.U),s,s)],p),C.O,C.m),L.ae("Aug 2019 - Persent",B.b5(C.l.i(0,500),20,C.M),s,s)],p),C.bU),M.aN(C.a4,L.ae("Bachelor of Technology in Information Technology",B.b5(C.l.i(0,500),20,C.M),s,s),C.k,s,s,s,s,s,s,s,s,s,s),T.a3(s,80,s),M.aN(C.a4,T.bh(H.a([L.dZ(C.hT,C.l.i(0,500),s),L.ae("  Una, Himachal Pradesh",B.b5(C.l.i(0,500),20,C.M),s,s)],p),C.m),C.k,s,s,s,s,s,s,s,s,s,s),M.aN(C.a4,T.bh(H.a([L.dZ(C.n6,C.l.i(0,500),s),D.a52(s,M.aN(s,L.ae("  www.iiitu.ac.in",B.b5(C.af,20,C.M),s,s),C.k,s,s,s,s,s,s,s,s,s,s),C.b6,!1,s,s,s,s,s,s,s,s,s,s,new X.ZG(),s,s,s,s,s)],p),C.m),C.k,s,s,s,s,s,s,s,s,s,s)],p),C.O,C.m),C.k,s,new S.ax(0,1/0,0,r.a.b/3),new S.bx(s,s,q,s,s,s,C.w),s,s,s,new V.ay(40,40,40,40),s,s,1110)],p),C.O,C.m),C.k,s,s,s,s,s,s,s,s,s,s)}}
 X.ZG.prototype={
-$0:function(){X.Kr("http://iiitu.ac.in/#gsc.tab=0")},
+$0:function(){X.Kr("http://iiitu.ac.in/")},
 $S:0}
 Z.rX.prototype={
 at:function(){return new Z.HA(C.n)}}
@@ -56192,7 +56192,7 @@ r($,"asc","aeF",function(){var q=P.a9R(0,50)
 return O.a8C(50,P.yw(4278649009).GB(0.15),q,0)})
 r($,"asb","x1",function(){var q=P.a9R(0,20)
 return O.a8C(50,C.o.GB(0.1),q,0)})
-s($,"asj","k8",function(){return H.a([F.TT("AI Radio",1,"assets/images/AIRadio.png","AI-Powered Voice Assistant Flutter Radio App"),F.TT("GlanceAt",2,"assets/images/glanceAt.jpeg","Wallpaper app with search and download option."),F.TT("Razor Pay",3,"assets/images/razorPay.jpeg","Intregated payments in flutter app with Razorpay Payment Gateway."),F.TT("Meeting Reminder",4,"assets/images/meetingReminder.jpeg","Reminds your meetings/classes and redirect you to respective website.")],H.R("o<BE>"))})
+s($,"asj","k8",function(){return H.a([F.TT("AI Radio",1,"assets/images/AIRadio.png","AI-Powered Voice Assistant Flutter Radio App"),F.TT("GlanceAt",2,"assets/images/glanceAt.jpeg","Wallpaper app with search and download option."),F.TT("Razor Pay",3,"assets/images/razorPay.jpeg","Integrated payments in flutter app with Razorpay Payment Gateway."),F.TT("Meeting Reminder",4,"assets/images/meetingReminder.jpeg","Reminds your meetings/classes and redirect you to respective website.")],H.R("o<BE>"))})
 s($,"asl","a49",function(){return H.a([U.VU(P.yw(4292476924),1,"assets/images/desktop.png","App Development"),U.VU(P.yw(4293197767),2,"assets/images/graphic.png","Competitve\nProgramming"),U.VU(P.yw(4294964189),3,"assets/images/ui.png","UI Design"),U.VU(P.yw(4294959328),4,"assets/images/Intreaction_design.png","Problem Setter")],H.R("o<CD>"))})
 r($,"aqG","a7c",function(){return new P.u()})
 s($,"al8","a7b",function(){return new F.RL($.a7c())})

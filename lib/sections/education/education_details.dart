@@ -89,11 +89,11 @@ class _EducationDetailsState extends State<EducationDetails> {
                   child: Row(
                     children: [
                       Icon(Icons.link_sharp, color: Colors.grey[500]),
-                      GestureDetector(
-                        onTap: () {
-                          openURL("http://iiitu.ac.in/");
-                        },
-                        child: Container(
+                      Container(
+                        child: InkWell(
+                          onTap: () {
+                            openURL("http://iiitu.ac.in/");
+                          },
                           child: Text(
                             "  www.iiitu.ac.in",
                             style: GoogleFonts.lato(
